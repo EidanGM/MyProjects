@@ -201,6 +201,17 @@ def BlackJack():
             BlackJack()
         else: return
     
+    if GamblerHandValue > 21:
+        if Money <= 0:
+            return
+        
+        print("(Quit, or (A)gain)")
+        Again = input(">").lower()
+        
+        if Again == "a":
+            BlackJack()
+        else: return
+
     while HouseHandValue < 17:
         randnum = randrange(1,11)
 
