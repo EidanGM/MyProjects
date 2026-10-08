@@ -3,7 +3,7 @@ from random import randrange
 Turns = 10
 MyKeyWord = "Jugar"
 
-print("")
+print("") 
 
 def LetsPlay():
     HiddenNumber = randrange(100,999)

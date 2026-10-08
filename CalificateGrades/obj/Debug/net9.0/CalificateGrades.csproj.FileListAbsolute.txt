@@ -1,0 +1,15 @@
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\bin\Debug\net9.0\CalificateGrades.exe
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\bin\Debug\net9.0\CalificateGrades.deps.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\bin\Debug\net9.0\CalificateGrades.runtimeconfig.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\bin\Debug\net9.0\CalificateGrades.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\bin\Debug\net9.0\CalificateGrades.pdb
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.AssemblyInfoInputs.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.AssemblyInfo.cs
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.csproj.CoreCompileInputs.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.sourcelink.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\refint\CalificateGrades.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.pdb
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\CalificateGrades.genruntimeconfig.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\CalificateGrades\obj\Debug\net9.0\ref\CalificateGrades.dll

@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(255, 214, 182);
+    margin: 0;
+}
+
+header {
+    display: grid; /* Activa el sistema de cuadrícula */
+    grid-template-columns: 1fr; /* Crea 1 columna del mismo tamaño */
+    gap: 0px; /* Deja espacio entre los elementos de adentro */
+    background-color: rgb(255, 174, 113); /* Un color de fondo para que notes la caja */
+    padding: 0; /* Espacio interno para que no quede pegado a los bordes */
+}
+
+.mi-flexbox {
+    display: flex; /* Activa el flexbox */
+    justify-content: space-between; /* Separa la columna izquierda y derecha hacia los extremos */
+    gap: 40px; /* Espacio de separación entre ambas columnas */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+    justify-content: space-between;
+}
+
+.LetItRide, .Animes-Metas {
+    flex: 1;
+}
+
+.miBotonColorin {
+    background-color: #fca311; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quita el borde por defecto */
+    padding: 10px 20px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de letra */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una manita al pasar por encima */
+}

@@ -1,0 +1,15 @@
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\bin\Debug\net10.0\Library.exe
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\bin\Debug\net10.0\Library.deps.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\bin\Debug\net10.0\Library.runtimeconfig.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\bin\Debug\net10.0\Library.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\bin\Debug\net10.0\Library.pdb
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.AssemblyInfoInputs.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.AssemblyInfo.cs
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.sourcelink.json
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\refint\Library.dll
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.pdb
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\Library.genruntimeconfig.cache
+C:\Users\eidan\OneDrive\Desktop\COSAS MUY IMPORTANTES\Proyectos\Library\obj\Debug\net10.0\ref\Library.dll

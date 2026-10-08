@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "c9t/63k6QtE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eidan\\OneDrive\\Desktop\\COSAS MUY IMPORTANTES\\Proyectos\\CalificateGrades\\CalificateGrades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eidan\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.20\\microsoft.netcore.app.ref.9.0.20.nupkg.sha512",
+    "C:\\Users\\eidan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.20\\microsoft.windowsdesktop.app.ref.9.0.20.nupkg.sha512",
+    "C:\\Users\\eidan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.20\\microsoft.aspnetcore.app.ref.9.0.20.nupkg.sha512",
+    "C:\\Users\\eidan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.20\\microsoft.netcore.app.host.win-x64.9.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
