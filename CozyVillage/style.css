@@ -1,0 +1,112 @@
+/* Reseteo básico y fondo general de la pantalla */
+body {
+    background-color: #e2e8f0; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+.horizontal-buttons {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en horizontal */
+    justify-content: center; /* Los centra horizontalmente (puedes cambiarlo a space-between si prefieres) */
+    gap: 1vw; /* Espacio de separación entre un botón y otro */
+    width: 100%;
+}
+
+.horizontal-buttons .btn {
+    flex: 1; 
+    padding: 1vh 0; /* Espacio vertical para que tengan buen grosor */
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+/*----------------------------------------------------------------*/
+
+/* 2. Tamaños y paddings exclusivos para la tarjeta principal */
+#main-card {
+    width: 15vw;
+    min-height: 25vh; /* Usamos min-height para que sea flexible */
+    justify-content: center; /* Centra los botones del menú de inicio */
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+/* 3. Tamaños y paddings exclusivos para la tarjeta de registro */
+#register-card {
+    width: 30vw;      /* Un poco más ancha si tus inputs lo necesitan */
+    min-height: 35vh; /* Más alta para que quepan los campos de usuario y contraseña */
+    justify-content: flex-start; /* Inicia desde arriba para acomodar el formulario */
+    align-items: center; /* Centra horizontalmente los elementos dentro de la tarjeta */
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+/*----------------------------------------------------------------*/
+/* 1. Estilos base compartidos por todas las tarjetas */
+.auth-card {
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Evita que el padding expanda el tamaño de más */
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de arriba a abajo */
+    gap: 12px;               /* Espacio uniforme entre cada botón */
+    width: 100%;             /* Ocupa el ancho interno disponible */
+    max-width: 200px;        /* Evita que los botones sean infinitamente anchos */
+}
+
+.auth-buttons button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.auth-card h2 {
+    font-size: 2vw;   /* O puedes usar un valor fijo en píxeles como 40px o 48px */
+    margin-top: 0;      /* Quitamos el margen superior por defecto que estorba en Flexbox */
+    margin-bottom: 1vh; /* Espacio exacto debajo del título */
+}
+
+.auth-card p {
+    font-size: 1vw;   /* O puedes usar un valor fijo en píxeles como 40px o 48px */
+    margin-top: 0;      /* Quitamos el margen superior por defecto que estorba en Flexbox */
+    margin-bottom: 1vh; /* Espacio exacto debajo del título */
+}
+
+/* Estilo simple para el mensaje de error de validación */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9vw;
+    margin-top: 1vh;
+    min-height: 2vh; /* Evita saltos bruscos de layout si aparece un error */
+}
+
+/* Alineación sencilla para los inputs */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5vh;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8vh 0.5vw;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1vw;
+}

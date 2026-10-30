@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Village - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor principal (el rectángulo del centro) -->
+    <div id="main-card" class="auth-card">
+        <h2>Cozy Village</h2>
+        <p>Start your journey</p>
+        
+        <div class="auth-buttons">
+            <button class="btn visitor" onclick="handleGuest()">Guest</button>
+            <button class="btn login" onclick="handleLogin()">Log In</button>
+            <button class="btn register" onclick="handleRegister()">Register</button>
+        </div>
+    </div>
+
+    <!-- Tarjeta del Formulario de Registro (oculta al inicio) -->
+    <div id="register-card" class="auth-card hidden">
+        <h2>Create Account</h2>
+        <p>Choose your username and password</p>
+
+        <form id="register-form" onsubmit="processRegister(event)">
+            <div class="input-group">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" name="username" placeholder="Enter username" required />
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="password" placeholder="Enter password" required />
+            </div>
+
+            <div class="input-group">
+              <label for="reg-confirm">Confirm Password:</label>
+              <input type="password" id="reg-confirm" name="confirmPassword" placeholder="Confirm password" required />
+            </div>
+
+            <!-- Mensaje de error/validación que mostraremos con JS -->
+            <p id="register-error" class="error-message"></p>
+
+            <div class="horizontal-buttons">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="button" class="btn secondary" onclick="showMainView()">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
