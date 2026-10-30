@@ -1,135 +1,148 @@
-/* Reseteo básico y fondo general de la pantalla */
+/* 1. Reset global y centrado fluido */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #e2e8f0; /* Fondo gris claro */
+    background-color: #e2e8f0;
     margin: 0;
-    padding: 0;
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    padding: 20px;
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-}
-
-.horizontal-buttons {
-    display: flex;
-    flex-direction: row; /* Coloca los elementos en horizontal */
-    justify-content: center; /* Los centra horizontalmente (puedes cambiarlo a space-between si prefieres) */
-    gap: 1vw; /* Espacio de separación entre un botón y otro */
-    width: 100%;
-}
-
-.horizontal-buttons .btn {
-    flex: 1; 
-    padding: 1vh 0; /* Espacio vertical para que tengan buen grosor */
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .hidden {
     display: none !important;
 }
-/*----------------------------------------------------------------*/
 
-/* 2. Tamaños y paddings exclusivos para la tarjeta principal */
-#main-card {
-    width: 15vw;
-    min-height: 25vh; /* Usamos min-height para que sea flexible */
-    justify-content: center; /* Centra los botones del menú de inicio */
-    
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-/* 3. Tamaños y paddings exclusivos para la tarjeta de registro */
-#register-card {
-    width: 30vw;      /* Un poco más ancha si tus inputs lo necesitan */
-    min-height: 35vh; /* Más alta para que quepan los campos de usuario y contraseña */
-    justify-content: flex-start; /* Inicia desde arriba para acomodar el formulario */
-    align-items: center; /* Centra horizontalmente los elementos dentro de la tarjeta */
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-}
-
-#game-view {
-    width: 25vw;
-    min-height: 20vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#login-card {
-    width: 20vw;
-    min-height: 38vh;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 3vh 2vw;
-}
-
-/*----------------------------------------------------------------*/
-/* 1. Estilos base compartidos por todas las tarjetas */
+/* 2. Estilos base compartidos por todas las tarjetas */
 .auth-card {
     background-color: #ffffff;
     border: 2px solid #333333;
     border-radius: 12px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box; /* Evita que el padding expanda el tamaño de más */
+    padding: 24px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    /* Limites para evitar que se aplaste al abrir DevTools o se estire demasiado */
+    max-width: 380px; 
+    min-width: 280px;
 }
 
-.auth-buttons {
-    display: flex;
-    flex-direction: column; /* Alinea los elementos de arriba a abajo */
-    gap: 12px;               /* Espacio uniforme entre cada botón */
-    width: 100%;             /* Ocupa el ancho interno disponible */
-    max-width: 200px;        /* Evita que los botones sean infinitamente anchos */
+/* 3. Modificadores de tamaño según la tarjeta si lo necesitas */
+#main-card {
+    max-width: 320px;
 }
 
-.auth-buttons button {
-    padding: 10px;
-    cursor: pointer;
+#register-card {
+    max-width: 400px;
 }
 
+#login-card {
+    max-width: 360px;
+}
+
+#game-view {
+    max-width: 380px;
+    text-align: center;
+}
+
+/* 4. Tipografías escalables (no se vuelven diminutas con F12) */
 .auth-card h2 {
-    font-size: 2vw;   /* O puedes usar un valor fijo en píxeles como 40px o 48px */
-    margin-top: 0;      /* Quitamos el margen superior por defecto que estorba en Flexbox */
-    margin-bottom: 1vh; /* Espacio exacto debajo del título */
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .auth-card p {
-    font-size: 1vw;   /* O puedes usar un valor fijo en píxeles como 40px o 48px */
-    margin-top: 0;      /* Quitamos el margen superior por defecto que estorba en Flexbox */
-    margin-bottom: 1vh; /* Espacio exacto debajo del título */
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #4a5568;
 }
 
-/* Estilo simple para el mensaje de error de validación */
-.error-message {
-    color: #e74c3c;
-    font-size: 0.9vw;
-    margin-top: 1vh;
-    min-height: 2vh; /* Evita saltos bruscos de layout si aparece un error */
+/* 5. Estructura de Formularios e Botones */
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
 }
 
-/* Alineación sencilla para los inputs */
+.horizontal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e2e8f0;
+}
+
+.horizontal-buttons .btn {
+    flex: 1;
+}
+
+/* 6. Inputs y Mensajes */
 .input-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1.5vh;
+    margin-bottom: 14px;
     width: 100%;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: 600;
 }
 
 .input-group input {
     width: 100%;
-    padding: 0.8vh 0.5vw;
-    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
     border-radius: 6px;
-    font-size: 1vw;
+    font-size: 0.95rem;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    min-height: 18px;
+    text-align: center;
 }
 
 .success-text {
-    font-size: 1.5vw;
+    font-size: 1.25rem;
     font-weight: bold;
-    color: #2e7d32; /* Verde agradable */
-    margin-top: 1vh;
+    color: #2e7d32;
+    margin-top: 8px;
 }

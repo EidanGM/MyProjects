@@ -29,13 +29,12 @@ function handleRegister() {
 
 // Para el botón "Back", por si el jugador quiere regresar al menú principal
 function showMainView() {
-    const mainCard = document.getElementById('main-card');
-    const registerCard = document.getElementById('register-card');
-
-    if (mainCard && registerCard) {
-        registerCard.classList.add('hidden');
-        mainCard.classList.remove('hidden');
-    }
+    document.getElementById('login-card').classList.add('hidden');
+    document.getElementById('register-card').classList.add('hidden');
+    document.getElementById('game-view').classList.add('hidden');
+    
+    // Mostramos el menú principal
+    document.getElementById('main-card').classList.remove('hidden');
 }
 
 function processLogin(event) {
