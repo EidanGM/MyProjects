@@ -50,6 +50,38 @@
             </div>
         </form>
     </div>
+    
+    <!-- Tarjeta de Log In -->
+    <div id="login-card" class="auth-card hidden">
+        <h2>Welcome Back</h2>
+        <p>Enter your credentials to continue</p>
+
+        <form id="login-form" onsubmit="processLogin(event)">
+            <div class="input-group">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" placeholder="Enter username" required />
+            </div>
+
+            <div class="input-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" placeholder="Enter password" required />
+            </div>
+
+            <!-- Mensaje de error dinámico -->
+            <p id="login-error" class="error-message"></p>
+
+            <div class="horizontal-buttons">
+                <button type="submit" class="btn">Log In</button>
+                <button type="button" class="btn" onclick="showMainView()">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Vista del Juego / Panel Principal (oculta por defecto) -->
+    <div id="game-view" class="auth-card hidden">
+        <h2>Welcome to Cozy Village!</h2>
+        <p class="success-text">You're in</p>
+    </div>
 
     <script src="script.js"></script>
 </body>

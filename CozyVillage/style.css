@@ -48,6 +48,22 @@ body {
     padding-bottom: 3vh;
 }
 
+#game-view {
+    width: 25vw;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#login-card {
+    width: 20vw;
+    min-height: 38vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3vh 2vw;
+}
+
 /*----------------------------------------------------------------*/
 /* 1. Estilos base compartidos por todas las tarjetas */
 .auth-card {
@@ -109,4 +125,11 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1vw;
+}
+
+.success-text {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #2e7d32; /* Verde agradable */
+    margin-top: 1vh;
 }

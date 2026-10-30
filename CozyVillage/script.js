@@ -1,3 +1,22 @@
+function showGameView(username) {
+    // Ocultamos todas las tarjetas de autenticación
+    document.getElementById('main-card').classList.add('hidden');
+    document.getElementById('register-card').classList.add('hidden');
+    document.getElementById('login-card').classList.add('hidden');
+
+    // Mostramos la vista del juego
+    document.getElementById('game-view').classList.remove('hidden');
+
+    console.log("Welcome", username);
+}
+
+function handleLogin() {
+    console.log("Tu mensaje aquí");
+    document.getElementById('main-card').classList.add('hidden');
+    document.getElementById('register-card').classList.add('hidden');
+    document.getElementById('login-card').classList.remove('hidden');
+}
+
 function handleRegister() {
     const mainCard = document.getElementById('main-card');
     const registerCard = document.getElementById('register-card');
@@ -17,6 +36,35 @@ function showMainView() {
         registerCard.classList.add('hidden');
         mainCard.classList.remove('hidden');
     }
+}
+
+function processLogin(event) {
+    event.preventDefault();
+
+    const usernameInput = document.getElementById('login-username').value.trim();
+    const passwordInput = document.getElementById('login-password').value;
+    const errorElement = document.getElementById('login-error');
+
+    errorElement.textContent = "";
+
+    // 1. Cargar lista de usuarios desde localStorage
+    let registeredUsers = JSON.parse(localStorage.getItem('cozyUsers')) || [];
+
+    // 2. Buscar si el usuario existe y coincide la contraseña
+    const userFound = registeredUsers.find(
+        user => user.username === usernameInput && user.password === passwordInput
+    );
+
+    if (!userFound) {
+        errorElement.textContent = "Error: Invalid username or password.";
+        return;
+    }
+
+    // 3. Limpiar formulario
+    document.getElementById('login-form').reset();
+
+    // 4. Entrar al juego usando la función reutilizable
+    showGameView(userFound.username);
 }
 
 // Función que procesa y valida el registro del usuario
@@ -54,14 +102,17 @@ function processRegister(event) {
         return;
     }
 
-    // 6. Si todo pasa las validaciones, guardamos el nuevo usuario
+    // Guardamos el usuario
     registeredUsers.push({ username: usernameInput, password: passwordInput });
     localStorage.setItem('cozyUsers', JSON.stringify(registeredUsers));
 
-    console.log("¡Registro exitoso para el usuario:", usernameInput);
-    alert("Account created successfully!");
-    
-    // Limpiamos el formulario y regresamos a la tarjeta principal
+    // Limpiamos los campos del formulario
     document.getElementById('register-form').reset();
-    showMainView();
+    
+    // Llamamos a la función compartida
+    showGameView(usernameInput);
+}
+
+function handleGuest() {
+    showGameView("Guest");
 }
